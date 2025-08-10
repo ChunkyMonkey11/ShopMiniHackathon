@@ -3,6 +3,7 @@ import {Button, Avatar, AvatarImage, AvatarFallback, Touchable, Card, CardConten
 import {Collector} from './components/Collector'
 import {UserFeed} from './components/UserFeed'
 import {FriendsFeed} from './components/FriendsFeed'
+import {Stories} from './components/Stories'
 import {supabase} from './lib/supa'
 
 type View = 'home' | 'feed' | 'stories' | 'search'
@@ -239,17 +240,7 @@ export function App() {
   // Stories view
   if (view === 'stories') {
     return (
-      <div className="pt-12 px-4 pb-6">
-        <div className="flex items-center gap-3 mb-6">
-          <Button onClick={handleBack} variant="secondary">← Back</Button>
-          <h1 className="text-xl font-bold">Stories</h1>
-        </div>
-        <div className="text-center py-12">
-          <div className="text-6xl mb-4">📱</div>
-          <h2 className="text-2xl font-bold mb-2">Stories Coming Soon</h2>
-          <p className="text-gray-600">Share your shopping moments with friends</p>
-        </div>
-      </div>
+      <Stories onBack={handleBack} />
     )
   }
 
