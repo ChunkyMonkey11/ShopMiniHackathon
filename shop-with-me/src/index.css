@@ -1,1 +1,37 @@
-@import "@shopify/shop-minis-react/styles";
+:root { --radius: 16px; --muted:#666; }
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; margin: 0; background: #fff; }
+.page {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 24px 16px 32px;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+  color: #111;
+}
+.row { display:flex; align-items:center; }
+.space-between { justify-content: space-between; }
+.col { display:flex; flex-direction:column; }
+.gap { gap: 12px; }
+
+.avatar {
+  width: 56px; height: 56px; border-radius: 50%;
+  background: #eee; border: 1px solid #e5e5e5;
+}
+.name { font-weight: 600; font-size: 18px; line-height: 1.1; }
+
+.link-btn {
+  border: 0; background: transparent; padding: 6px 8px; border-radius: 999px;
+  color: #111; font-size: 14px; cursor: pointer;
+}
+
+.followers { text-align: center; margin: 28px 0 8px; }
+.followers-number { font-size: 36px; font-weight: 700; letter-spacing: -0.02em; }
+.followers-label { margin-top: -4px; color: var(--muted); font-size: 14px; }
+
+.grid-2 { display:grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 16px; }
+.tile {
+  width: 100%; padding: 16px; border-radius: var(--radius);
+  border: 1px solid #e8e8e8; background: #fafafa; font-weight: 600; cursor: pointer;
+}
+
+.primary-btn-wrap { margin-top: 16px; }
