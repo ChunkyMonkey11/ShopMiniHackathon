@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 @import "@shopify/shop-minis-react/styles";
 
 /* Force white text inside product cards in dark mode when we add smr-dark-card */
@@ -42,7 +44,7 @@
   0%, 100% { transform: translateY(0px) rotate(0deg); }
   25% { transform: translateY(-8px) rotate(-2deg); }
   50% { transform: translateY(-12px) rotate(1deg); }
-  75% { transform: translateY(-6px) rotate(-1deg); }
+  75% { transform: translateY(-6px) rotate(-2deg); }
 }
 
 @keyframes float-3 {
